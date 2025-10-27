@@ -17,6 +17,13 @@ class Synapseq < Formula
 
     chmod 0755, bin_path
     bin.install bin_path => "synapseq"
+
+    manpage = Dir["**/man/synapseq.1"].first
+    if manpage
+      man1.install manpage
+    else
+      opoo "No manpage found in archive."
+    end
   end
 
   test do
