@@ -58,7 +58,7 @@ class Synapseq < Formula
         man synapseq
 
       Or check out the usage documentation:
-        less #{opt_doc}/USAGE.txt
+        less #{doc}/USAGE.txt
     EOS
   end
 
