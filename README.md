@@ -36,6 +36,13 @@ This tap currently supports:
 
 The formula automatically downloads the precompiled binary from the [latest GitHub release](https://github.com/ruanklein/synapseq/releases/latest).
 
+## Issues and Support
+
+For reporting bugs or suggesting improvements related to installation, packaging, or distribution, please open an issue in the main SynapSeq repository using the  
+[`type: packaging`](https://github.com/ruanklein/synapseq/issues?q=is%3Aissue+label%3A%22type%3A+packaging%22) label.
+
+[Go to SynapSeq Issues](https://github.com/ruanklein/synapseq/issues/new?labels=type%3A+packaging&title=%5Bpackaging%5D%3A+)
+
 ## License
 
 SynapSeq is licensed under the [GPL-2.0](https://opensource.org/licenses/GPL-2.0) license.
