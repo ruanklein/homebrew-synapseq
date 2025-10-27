@@ -12,7 +12,7 @@ class Synapseq < Formula
   depends_on arch: :arm64
 
   def install
-    bin_path = Dir["**/bin/synapseq*"].find { |f| File.extname(f).empty? }
+    bin_path = Dir["**/bin/synapseq*"].find { |f| File.basename(f) !~ /\.sha256$/ }
     raise "Binary not found in archive" unless bin_path
 
     chmod 0755, bin_path
