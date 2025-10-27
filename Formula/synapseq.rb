@@ -39,7 +39,7 @@ class Synapseq < Formula
     pkgshare.install "scripts" if Dir.exist?("scripts")
     pkgshare.install "contrib" if Dir.exist?("contrib")
 
-     doc.install Dir["*.txt"] if Dir["*.txt"].any?
+    doc.install Dir["*.txt"] if Dir["*.txt"].any?
   end
 
   def caveats
