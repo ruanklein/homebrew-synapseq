@@ -30,7 +30,9 @@ The binary will be available at:
 
 This tap currently supports:
 
-- **macOS ARM64** (Apple Silicon)
+- **macOS ARM64**
+- **Linux ARM64**
+- **Linux x86_64**
 
 The formula automatically downloads the precompiled binary from the [latest GitHub release](https://github.com/ruanklein/synapseq/releases/latest).
 
