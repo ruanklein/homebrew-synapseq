@@ -1,7 +1,7 @@
 class Synapseq < Formula
   desc "Synapse-Sequenced Brainwave Generator"
   homepage "https://github.com/ruanklein/synapseq"
-  version "3.4.0"
+  version "3.5.0"
   license "GPL-2.0-only"
 
   base_url = "https://github.com/ruanklein/synapseq/releases/download/v#{version}"
@@ -9,17 +9,17 @@ class Synapseq < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "#{base_url}/synapseq-v#{version}-macos-arm64.tar.gz"
-      sha256 "423695f1802011bc0e5d848cbf842ebf958f966214eae6ec9f52986026880894"
+      sha256 "cfc07fda6af90d1087a560b982e5e9b66648521e05c7ba7813cb0c4c4fb9ba2c"
     else
       odie "SynapSeq is only available for macOS ARM64 (Apple Silicon)."
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
       url "#{base_url}/synapseq-v#{version}-linux-arm64.tar.gz"
-      sha256 "7b752e414326439b475aafe275c9c5ae5223e979b7c9d27aa369321a90e9f300"
+      sha256 "95de34ed0d6bb5f8513ce238e587fbd583e18040cb250dfd54e6e695b1cfa1fb"
     elsif Hardware::CPU.intel?
       url "#{base_url}/synapseq-v#{version}-linux-amd64.tar.gz"
-      sha256 "821182b39c1c4e15c20e3682f2a8298714069067994b36f8ba003df75381bb57"
+      sha256 "70c924270c18615ca2b4925409dea383ff33689536102ab5fb444acb9a9a1a85"
     else
       odie "Unsupported Linux architecture for SynapSeq."
     end
